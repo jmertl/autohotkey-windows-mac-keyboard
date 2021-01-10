@@ -22,10 +22,10 @@ SendMode Input
 ; --------------------------------------------------------------
 
 ; Capture entire screen with CMD/WIN + SHIFT + 3
-#+3::send #{PrintScreen}
+!+3::send #{PrintScreen}
 
 ; Capture portion of the screen with CMD/WIN + SHIFT + 4
-#+4::#+s
+!+4::#+s
 
 ; --------------------------------------------------------------
 ; media/function keys all mapped to the right option key
@@ -66,46 +66,46 @@ F19::Run https://facebook.com
 ; --------------------------------------------------------------
 
 ; Make Ctrl + S work with cmd (windows) key
-#s::Send, ^s
+!s::Send, ^s
 
 ; Selecting
-#a::Send, ^a
+!a::Send, ^a
 
 ; Copying
-#c::Send, ^c
+!c::Send, ^c
 
 ; Pasting
-#v::Send, ^v
+!v::Send, ^v
 
 ; Cutting
-#x::Send, ^x
+!x::Send, ^x
 
 ; Opening
-#o::Send ^o
+!o::Send ^o
 
 ; Finding
-#f::Send ^f
+!f::Send ^f
 
 ; Undo
-#z::Send ^z
+!z::Send ^z
 
 ; Redo
-#y::Send ^y
+!y::Send ^y
 
 ; New tab
-#t::Send ^t
+!t::Send ^t
 
 ; close tab
-#w::Send ^w
+!w::Send ^w
 
 ; Close windows (cmd + q to Alt + F4)
-#q::Send !{F4}
+!q::Send !{F4}
 
 ; Remap Windows + Tab to Alt + Tab.
 Lwin & Tab::AltTab
 
 ; minimize windows
-#m::WinMinimize,a
+!m::WinMinimize,a
 
 
 ; --------------------------------------------------------------
@@ -113,52 +113,52 @@ Lwin & Tab::AltTab
 ; --------------------------------------------------------------
 
 ; Map Alt + L to @
-!l::SendInput {@}
+#l::SendInput {@}
 
 ; Map Alt + N to \
-+!7::SendInput {\}
++#7::SendInput {\}
 
 ; Map Alt + N to ©
-!g::SendInput {©}
+#g::SendInput {©}
 
 ; Map Alt + o to ø
-!o::SendInput {ø}
+#o::SendInput {ø}
 
 ; Map Alt + 5 to [
-!5::SendInput {[}
+#5::SendInput {[}
 
 ; Map Alt + 6 to ]
-!6::SendInput {]}
+#6::SendInput {]}
 
 ; Map Alt + E to €
-!e::SendInput {€}
+#e::SendInput {€}
 
 ; Map Alt + - to –
-!-::SendInput {–}
+#-::SendInput {–}
 
 ; Map Alt + 8 to {
-!8::SendInput {{}
+#8::SendInput {{}
 
 ; Map Alt + 9 to }
-!9::SendInput {}}
+#9::SendInput {}}
 
 ; Map Alt + - to ±
-!+::SendInput {±}
+#+::SendInput {±}
 
 ; Map Alt + R to ®
-!r::SendInput {®}
+#r::SendInput {®}
 
 ; Map Alt + N to |
-!7::SendInput {|}
+#7::SendInput {|}
 
 ; Map Alt + W to ∑
-!w::SendInput {∑}
+#w::SendInput {∑}
 
 ; Map Alt + N to ~
-!n::SendInput {~}
+#n::SendInput {~}
 
 ; Map Alt + 3 to #
-!3::SendInput {#}
+#3::SendInput {#}
 
 
 
@@ -166,8 +166,8 @@ Lwin & Tab::AltTab
 ; Custom mappings for special chars
 ; --------------------------------------------------------------
 
-;#ö::SendInput {[} 
-;#ä::SendInput {]} 
+;!ö::SendInput {[} 
+;!ä::SendInput {]} 
 
 ;^ö::SendInput {{} 
 ;^ä::SendInput {}} 
@@ -178,13 +178,13 @@ Lwin & Tab::AltTab
 ; --------------------------------------------------------------
 
 ; Google Chrome
-#IfWinActive, ahk_class Chrome_WidgetWin_1
+!IfWinActive, ahk_class Chrome_WidgetWin_1
 
 ; Show Web Developer Tools with cmd + alt + i
-#!i::Send {F12}
+!#i::Send {F12}
 
 ; Show source code with cmd + alt + u
-#!u::Send ^u
+!#u::Send ^u
 
-#IfWinActive
+!IfWinActive
 
