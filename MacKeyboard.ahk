@@ -112,8 +112,11 @@ Lwin & Tab::AltTab
 ; VSCode
 ; --------------------------------------------------------------
 
-; Copying
+; commands
 !+P::Send, ^+P
+
+; open file
+!P::Send, ^P
 
 
 
